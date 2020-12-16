@@ -8,10 +8,4 @@ resource "aws_redshift_cluster" "default" {
   cluster_subnet_group_name = aws_redshift_subnet_group.redshift_subnet_group.id
   skip_final_snapshot = true
   iam_roles = [aws_iam_role.redshift_role.arn]
-depends_on = [
-    "aws_vpc.redshift_vpc",
-    "aws_security_group.redshift_security_group",
-    "aws_redshift_subnet_group.redshift_subnet_group",
-    "aws_iam_role.redshift_role"
-  ]
 }

@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "redshift" {
-  bucket = var.redshift_s3_bucket
+  bucket = "redshift-hackathon-20201216-source-aligned"
   tags     = var.tags
   versioning {
     enabled = true

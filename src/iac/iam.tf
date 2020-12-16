@@ -8,7 +8,7 @@ policy = <<EOF
         {
             "Effect": "Allow",
             "Action": "s3:*",
-            "Resource": "*"
+            "Resource": "arn:aws:s3:::redshift-hackathon-20201216/*"
         }
     ]
 }

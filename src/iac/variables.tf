@@ -51,6 +51,10 @@ variable "redshift_s3_bucket" {
   description = "AWS Redshift S3 Bucket"
 }
 
+variable "application_s3_bucket" {
+  description = "AWS Redshift S3 Bucket"
+}
+
 variable "ssl_cert" {
   description = "SSL Cert ARN"
 }
@@ -77,4 +81,8 @@ variable "rs_nodetype" {
 
 variable "rs_cluster_type" {
   description = "Redshift cluster Type"
+ }
+
+ variable "tags" {
+  description = "AWS Tags"
  }
