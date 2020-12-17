@@ -9,3 +9,13 @@ resource "aws_redshift_cluster" "default" {
   skip_final_snapshot = true
   iam_roles = [aws_iam_role.redshift_role.arn]
 }
+
+//resource "aws_redshift_parameter_group" "group" {
+//  name   = "redshift-parameter-group"
+//  family = "redshift-1.0"
+
+//  parameter {
+//    name  = "require_ssl"
+//    value = "true"
+//  }
+//}

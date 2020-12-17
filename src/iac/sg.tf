@@ -6,8 +6,7 @@ ingress {
     from_port   = 5439
     to_port     = 5439
     protocol    = "tcp"
-    //cidr_blocks = ["111.220.162.153","220.245.209.67","103.105.169.225","116.255.10.79","49.180.64.229"]
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = ["49.179.161.106/32"]
   }
 tags = var.tags
 }
