@@ -15,7 +15,7 @@ resource "aws_lambda_function" "CopyCommand" {
        USER_NAME = var.rs_master_username
        PORT = aws_redshift_cluster.default.port
        BUCKET = "redshift-hackathon-20201216-source-aligned"
-       PASSWORD = var.rs_master_pass
+       PASSWORD = random_password.password.result
      }
    }
 

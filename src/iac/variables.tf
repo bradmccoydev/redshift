@@ -71,10 +71,6 @@ variable "rs_master_username" {
   description = "Redshift Master Username"
  }
 
-variable "rs_master_pass" { 
-  description = "Redshift Master Password"
-}
-
 variable "rs_nodetype" { 
   description = "Redshift Node Type"
 }

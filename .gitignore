@@ -2,6 +2,7 @@
 **/.terraform/*
 **/.terraform.lock.hcl/*
 *.tfvars.*
+/src/iac.terraform.lock.hcl
 
 # .tfstate files
 *.tfstate
