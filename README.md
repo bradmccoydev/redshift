@@ -15,5 +15,12 @@ Also the password is an environment variable that is plain text so you would wan
 
 # IAC
 This code is using terraform to provision infrastructure. Version: v0.14.2
+# Deployement instruction
 
-
+# verify if you have woring version of terraform and run below commands from terminal
+terraform -version
+cd src/iac
+terraform init
+terraform plan
+terraform apply
+terrafrom destroy
